@@ -1,7 +1,7 @@
-# Ticker Reservations System
+# Ticket Reservations System
 
 ## Overview
-The Ticker Reservations System is a web-based application designed to manage ticket reservations for train journeys. It provides users with functionalities such as registration, login, and booking management through an intuitive interface. The system is built using Flask for the backend and integrates with Oracle and MySQL databases for data management.
+The Ticket Reservations System is a web-based application designed to manage ticket reservations for train journeys. It provides users with functionalities such as registration, login, and booking management through an intuitive interface. The system is built using Flask for the backend and integrates with Oracle and MySQL databases for data management.
 
 ## Key Features
 - **User Registration**: Users can create accounts by providing their username, password, phone number, and address.
@@ -45,11 +45,9 @@ INSERT INTO TICKET VALUES ('TK01', 'T100', 'SC101', 'S100', 'S101', '200');
 ```
 
 ## Conclusion
-The Ticker Reservations System serves as a robust platform for managing train ticket reservations, enhancing user experience through its efficient design and integration with powerful database systems. For further development or contributions, feel free to reach out or fork the repository.
+The Ticket Reservations System serves as a robust platform for managing train ticket reservations, enhancing user experience through its efficient design and integration with powerful database systems. For further development or contributions, feel free to reach out or fork the repository.
 
 ---
 
 This README.md provides a concise overview of the Ticker Reservations System project, summarizing its features, technologies, and key code components.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/27943426/27518804-2baf-4b71-b34e-da9476edc0f4/paste.txt
