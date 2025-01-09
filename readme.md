@@ -47,7 +47,3 @@ INSERT INTO TICKET VALUES ('TK01', 'T100', 'SC101', 'S100', 'S101', '200');
 ## Conclusion
 The Ticket Reservations System serves as a robust platform for managing train ticket reservations, enhancing user experience through its efficient design and integration with powerful database systems. For further development or contributions, feel free to reach out or fork the repository.
 
----
-
-This README.md provides a concise overview of the Ticker Reservations System project, summarizing its features, technologies, and key code components.
-
