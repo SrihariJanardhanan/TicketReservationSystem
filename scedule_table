@@ -1,0 +1,4 @@
+SELECT DISTINCT s.Station_id,t.Train_id, s.Station_name, t.Train_name,sc.TIme_arrival,sc.Time_departure
+        FROM Schedule sc
+        JOIN Train t ON sc.Train_id = t.Train_id
+        Join Station s ON s.Station_id=sc.Station_id;

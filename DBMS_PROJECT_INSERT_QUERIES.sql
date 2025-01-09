@@ -1,0 +1,222 @@
+INSERT INTO STATION 
+VALUES(
+    'S101','T100','DINDIGUL'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S102','T100','TRICHY'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S103','T100','SRIRANGAM'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S104','T100','ARIYALLUR'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S105','T100','VRIDACHALLAM'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S106','T100','VILLUPURAM'
+);
+
+INSERT INTO STATION
+VALUES(
+    'S107','T100','CHENGALPATTU'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S108','T100','TAMBARAM'
+);
+
+INSERT INTO STATION 
+VALUES(
+    'S109','T100','CHENNAI_EGMORE'
+);
+commit;
+  
+SELECT DISTINCT t.Train_id, t.Train_name, c.cost
+FROM Cost c
+JOIN Station s1 ON c.Board_station = s1.Station_id
+JOIN Station s2 ON c.Arrival_station = s2.Station_id
+JOIN Train t ON c.Train_id = t.Train_id;
+
+INSERT INTO  Schedule
+VALUES(
+    'SC100','T100','S100','NA','6:40 am',
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC101','T100','S101','7:30 am ','7:35 am'
+);
+INSERT INTO Schedule
+VALUES(
+    'SC102','T100','S102',' 9:00 am ','9:15 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC103','T100','S103','10:00 am','10:03 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC104','T100','S104','10:30 am','10:33 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC105','T100','S105','11:00 am','11:05 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC106','T100','S106','12:00 am','12:05 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC107','T100','S107','12:45 am','12:50 am'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC108','T100','S108','13:20 pm','13:25 pm'
+);
+
+INSERT INTO Schedule
+VALUES(
+    'SC109','T100','S109','13:55 pm','NA'
+);
+
+
+
+INSERT INTO Ticket
+VALUES(
+    'TK01','T100','SC101','S100','S101','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK02','T100','SC101','S100','S101','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK03','T100','SC101','S100','S101','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK04','T100','SC102','S100','S102','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK05','T100','SC102','S100','S102','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK06','T100','SC103','S100','S103','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK07','T100','SC104','S100','S104','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK08','T100','SC105','S100','S105','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK09','T100','SC106','S100','S106','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK10','T100','SC107','S100','S107','200'
+);
+INSERT INTO Ticket
+VALUES(
+    'TK11','T100','SC108','S100','S108','200'
+);
+
+INSERT INTO Ticket
+VALUES(
+    'TK12','T100','SC109','S100','S109','200'
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK01','T100','S100','S101',500
+);
+INSERT INTO Cost
+VALUES(
+    'TK02','T100','S100','S101',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK03','T100','S100','S101',500
+);
+INSERT INTO Cost
+VALUES(
+    'TK04','T100','S100','S102',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK05','T100','S100','S102',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK06','T100','S100','S103',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK07','T100','S100','S104',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK08','T100','S100','S105',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK09','T100','S100','S106',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK10','T100','S100','S107',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK11','T100','S100','S108',500
+);
+
+INSERT INTO Cost
+VALUES(
+    'TK12','T100','S100','S109',500
+);
+
+
+commit;
